@@ -1,0 +1,97 @@
+/*     
+    <main>
+        <div class="display-container">
+            <div class="display">
+                <p class="display-text">0</p>
+            </div>
+        </div>
+        <div class="calculator-container">
+            <button class="number" id="number" data-value="0">0</button>
+            <button class="number" id="number" data-value="1">1</button>
+            <button class="number" id="number" data-value="2">2</button>
+            <button class="number" id="number" data-value="3">3</button>
+            <button class="number" id="number" data-value="4">4</button>
+            <button class="number" id="number" data-value="5">5</button>
+            <button class="number" id="number" data-value="6">6</button>
+            <button class="number" id="number" data-value="7">7</button>
+            <button class="number" id="number" data-value="8">8</button>
+            <button class="number" id="number" data-value="9">9</button>
+            <button class="operator" id="operator" data-value="+">+</button>
+            <button class="operator" id="operator" data-value="-">-</button>
+            <button class="operator" id="operator" data-value="*">*</button>
+            <button class="operator" id="operator" data-value="/">/</button>
+            <button class="operator" id="operator" data-value="=">=</button>
+            <button class="operator" id="operator" data-value="C">C</button>
+        </div>
+    </main>
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.display-container {
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.display {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+}
+
+.display-text {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.calculator-container {
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.number {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.operator {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
